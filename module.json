@@ -12,5 +12,6 @@
         "minimum": "12",
         "verified": "12"
     },
-    "scripts": [ "scripts/hello-worlds.js" ]
+    "scripts": [ "scripts/hello-worlds.js" ],
+    "manifest": "https://raw.githubusercontent.com/facufierro/fft-battlemap-generator/main/module.json"
 }

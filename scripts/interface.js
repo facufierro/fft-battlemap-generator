@@ -23,7 +23,7 @@ async function showEncountersDialog() {
         callback: (html) => {
           const selectedFile = html.find('[name="preset-select"]').val();
           console.log(`Selected encounter: ${selectedFile}`);
-          debugEncounter(selectedFile);
+          spawnEncounter(selectedFile);
         }
       }
     },

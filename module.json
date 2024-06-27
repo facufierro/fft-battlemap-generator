@@ -14,9 +14,9 @@
     },
     "scripts": [
         "scripts/main.js",
-        "scripts/util.js",
-        "scripts/ui.js"
-
+        "scripts/interface.js",
+        "scripts/utils.js",
+        "scripts/Encounter.js"
     ],
     "styles": [
         "styles/styles.css"

@@ -1,0 +1,16 @@
+{
+    "id": "fft-battlemap-generator",
+    "title": "Random Battlemap Generator",
+    "description": "Generates a random themed battlemap with one click.",
+    "authors": [
+        {
+            "name": "fierrof"
+        }
+    ],
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    },
+    "scripts": [ "scripts/hello-worlds.js" ]
+}

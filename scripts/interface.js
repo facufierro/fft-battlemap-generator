@@ -1,17 +1,17 @@
+async function loadEncounterList() {
+  let presets = await MassEdit.getPresets({ folder: 'Encounters' });
+  return presets && presets.length > 0 ? presets.map(preset => preset.name) : [];
+}
+
 async function showEncountersDialog() {
-  const picker = await FilePicker.browse("data", "modules/fft-battlemap-generator/presets/encounters");
-  const files = picker.files.filter(file => file.endsWith(".json"));
-  if (files.length === 0) {
-    ui.notifications.warn("No encounter files found in the encounters folder.");
+  const encounterNames = await loadEncounterList();
+  
+  if (encounterNames.length === 0) {
+    ui.notifications.warn("No encounter presets found in the Encounters folder.");
     return;
   }
 
-  const options = files.map(file => {
-    const fileName = file.split("/").pop().replace('.json', '');
-    return `<option value="${fileName}">${fileName}</option>`;
-  }).join("");
-
-  // Load the template and insert the options dynamically
+  const options = encounterNames.map(name => `<option value="${name}">${name}</option>`).join("");
   const template = await renderTemplate('modules/fft-battlemap-generator/templates/dialog.html', {});
 
   new Dialog({
@@ -27,12 +27,8 @@ async function showEncountersDialog() {
         }
       }
     },
-    render: (html) => {
-      // Insert the options into the select element
-      html.find('#preset-select').html(options);
-    }
+    render: (html) => html.find('#preset-select').html(options)
   }).render(true);
 }
 
-// Attach to window object to make it globally accessible
 window.showEncountersDialog = showEncountersDialog;

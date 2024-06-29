@@ -7,8 +7,8 @@ Hooks.on('getSceneControlButtons', (controls) => {
     layer: "controls", // Set to null to avoid errors
     tools: [{
       name: "fft-generate-forest-button",
-      title: "Generate Forest",
-      icon: "fas fa-tree", // Better icon for a forest
+      title: "Generate Encounters",
+      icon: "fas fa-globe", // Better icon for a forest
       button: true,
       onClick: () => {
         showEncountersDialog();

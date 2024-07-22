@@ -14,8 +14,7 @@
     },
     "scripts": [
         "scripts/interface.js",
-        "scripts/utils.js",
-        "scripts/Encounter.js",
+        "scripts/utils/encounter_utils.js",
         "scripts/main.js"
 
     ],

@@ -22,7 +22,6 @@
         "styles/styles.css"
     ],
     "packs": [ ],
-    "url": "",
-    "manifest": "https://raw.githubusercontent.com/facufierro/fft-battlemap-generator/main/module.json",
-    "download": "https://github.com/facufierro/fft-battlemap-generator/releases/download/v0.0.1-alpha/fft-battlemap-generator.zip"
+    "url": "https://github.com/facufierro/fft-battlemap-generator/releases/download/v0.0.1-alpha/fft-battlemap-generator.zip",
+    "manifest": "https://raw.githubusercontent.com/facufierro/fft-battlemap-generator/main/module.json"
 }

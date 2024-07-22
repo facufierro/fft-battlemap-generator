@@ -2,7 +2,7 @@
     "id": "fft-battlemap-generator",
     "title": "Random Battlemap Generator",
     "description": "Generates a random themed battlemap with one click.",
-    "version": "0.0.1",
+    "version": "0.0.1-alpha",
     "authors": [
         {
             "name": "fierrof"
@@ -23,6 +23,6 @@
     ],
     "packs": [ ],
     "url": "",
-    "manifest": "",
-    "download": ""
+    "manifest": "https://raw.githubusercontent.com/facufierro/fft-battlemap-generator/main/module.json",
+    "download": "https://github.com/facufierro/fft-battlemap-generator/releases/download/v0.0.1-alpha/fft-battlemap-generator.zip"
 }

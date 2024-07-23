@@ -20,7 +20,6 @@
 
     ],
     "styles": [
-        "styles/styles.css"
     ],
     "packs": [ ],
     "url": "https://github.com/facufierro/fft-battlemap-generator",

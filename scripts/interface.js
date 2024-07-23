@@ -1,4 +1,7 @@
-function addRandomBattlemapControl() {
+import { getEncounterList, spawnEncounter } from './encounters.js';
+import { selectTokenControls } from './utils.js';
+
+export function addRandomBattlemapControl() {
   Hooks.on('getSceneControlButtons', (controls) => {
     controls.push({
       name: "fft-random-battlemap-control",
@@ -34,7 +37,7 @@ function addRandomBattlemapControl() {
   });
 }
 
-async function showEncountersDialog() {
+export async function showEncountersDialog() {
   const encounterNames = await getEncounterList();
 
   if (encounterNames.length === 0) {
@@ -62,6 +65,3 @@ async function showEncountersDialog() {
     render: (html) => html.find('#preset-select').html(options)
   }).render(true);
 }
-
-window.showEncountersDialog = showEncountersDialog;
-window.addRandomBattlemapControl = addRandomBattlemapControl;

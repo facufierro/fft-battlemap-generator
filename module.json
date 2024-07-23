@@ -12,16 +12,14 @@
         "minimum": "12",
         "verified": "12"
     },
-    "scripts": [
+    "esmodules": [
         "scripts/utils.js",
         "scripts/interface.js",
         "scripts/encounters.js",
         "scripts/terrain.js",
         "scripts/main.js"
-
     ],
-    "styles": [
-    ],
+    "styles": [ ],
     "packs": [ ],
     "url": "https://github.com/facufierro/fft-battlemap-generator",
     "manifest": "https://raw.githubusercontent.com/facufierro/fft-battlemap-generator/main/module.json",

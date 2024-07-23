@@ -1,5 +1,4 @@
-function selectTokenControls() {
+export function selectTokenControls() {
     canvas.tokens.activate();
-}
-
-window.selectTokenControls = selectTokenControls;
+  }
+  

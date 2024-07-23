@@ -55,6 +55,7 @@ async function showEncountersDialog() {
           const selectedFile = html.find('[name="preset-select"]').val();
           console.log(`Selected encounter: ${selectedFile}`);
           spawnEncounter(selectedFile);
+          selectTokenControls();
         }
       }
     },
